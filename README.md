@@ -1,2 +1,2 @@
 # madamefleur
-Madame Fleur - Naturhandwerk
+Webseite für Madame Fleur - Naturhandwerk.
