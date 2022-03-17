@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
-import { CacheProvider } from '@emotion/core';
+import { CacheProvider } from '@emotion/react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import createCache from '@emotion/cache';
 import theme from '../src/theme';
 
-export const cache = createCache();
+const key = 'custom'
+export const cache = createCache({key});
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;

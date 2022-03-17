@@ -64,8 +64,11 @@ export default function Index() {
       <main>
       <div className={classes.heroContent}
       style={{
-        background: 'no-repeat url(IMG-20200908-WA0018.jpg) right bottom',
-        opacity: '.3'
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'right bottom',
+        boxShadow: 'inset 0 0 40px 20px #B49B83',
+        backgroundImage: 'linear-gradient(to left, transparent, #B49B83)',
+        backgroundImage: 'linear-gradient(transparent, #B49B83), linear-gradient(to left, transparent 75%, #B49B83), linear-gradient(to right, transparent, #B49B83), url(IMG-20200908-WA0018.jpg)',
       }}>
           <Box display="flex" justifyContent="flex-end">
             <Box display="flex" width="50%" justifyContent="center">
